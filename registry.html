@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ลงทะเบียนเรียน — ระบบบริการการศึกษา มหาวิทยาลัยแม่โจ้</title>
+  <meta name="description" content="ระบบลงทะเบียนเรียน มหาวิทยาลัยแม่โจ้ — ค้นหาและเลือกวิชา" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="site-header__top">
+      <div class="site-header__logo" aria-hidden="true">MJ</div>
+      <div class="site-header__titles">
+        <p class="site-header__uni">มหาวิทยาลัยแม่โจ้</p>
+        <p class="site-header__uni-en">Maejo University</p>
+      </div>
+      <div class="site-header__system">
+        <p class="site-header__system-th">ระบบบริการการศึกษา</p>
+        <p class="site-header__system-en">Student Service System</p>
+      </div>
+    </div>
+    <div class="site-header__sub">
+      <span class="site-header__welcome">ยินดีต้อนรับสู่ระบบบริการการศึกษา</span>
+      <span class="site-header__lang"><span class="site-header__lang-flag">🇹🇭</span> ภาษาไทย ▾</span>
+    </div>
+  </header>
+
+  <!-- ============ LAYOUT BODY ============ -->
+  <div class="layout-body">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="เมนูหลัก">
+      <p class="sidebar__title">เมนูหลัก</p>
+      <nav>
+        <ul>
+          <li><a class="sidebar__link" href="index.html"><span class="sidebar__num">1</span> แดชบอร์ดนักศึกษา</a></li>
+          <li><a class="sidebar__link is-active" href="registry.html"><span class="sidebar__num">2</span> ลงทะเบียนเรียน</a></li>
+          <li><a class="sidebar__link" href="ledger.html"><span class="sidebar__num">3</span> ผลการเรียน</a></li>
+          <li><a class="sidebar__link" href="#"><span class="sidebar__num">4</span> ตารางสอนอาจารย์</a></li>
+          <li><a class="sidebar__link" href="#"><span class="sidebar__num">5</span> ตารางการใช้ห้อง</a></li>
+          <li><a class="sidebar__link" href="#"><span class="sidebar__num">6</span> ปฏิทินการศึกษา</a></li>
+          <li><a class="sidebar__link" href="#"><span class="sidebar__num">7</span> หลักสูตรที่เปิดสอน</a></li>
+          <li><a class="sidebar__link" href="#"><span class="sidebar__num">8</span> แนะนำการลงทะเบียน</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar__hint">เปิดให้ลงทะเบียน 1–15 กันยายน 2569</div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main" id="main">
+      <!-- HERO -->
+      <section class="hero" aria-label="ระบบลงทะเบียนเรียน">
+        <p class="hero__eyebrow">ภาคเรียนที่ 1 ปีการศึกษา 2569</p>
+        <h1 class="hero__title">ระบบลงทะเบียนเรียน</h1>
+        <p class="hero__subtitle">ค้นหาและเลือกวิชาที่ต้องการลงทะเบียน พร้อมตรวจสอบการชนกันของตาราง</p>
+        <div class="search-bar">
+          <span class="search-bar__icon">🔍</span>
+          <input class="search-bar__input" type="search" placeholder="ค้นหาวิชา เช่น ปัญญาประดิษฐ์, CS-301..." aria-label="ค้นหาวิชา" />
+        </div>
+      </section>
+
+      <!-- REGISTRY GRID -->
+      <div class="registry-grid">
+        <!-- Filters -->
+        <aside class="filters card" aria-label="ตัวกรองวิชา">
+          <h2 class="card__title"><span class="card__icon">⚙️</span> หมวดหมู่วิชา</h2>
+          <ul style="display:flex;flex-direction:column;gap:4px;">
+            <li><button class="filter-btn is-active" type="button">ทั้งหมด <span class="filter-count">8</span></button></li>
+            <li><button class="filter-btn" type="button">วิชาเอก <span class="filter-count">6</span></button></li>
+            <li><button class="filter-btn" type="button">วิชาศึกษาทั่วไป <span class="filter-count">2</span></button></li>
+          </ul>
+          <div class="progress">
+            <div style="display:flex;justify-content:space-between;font-size:0.85rem;">
+              <span style="color:var(--text-muted);">หน่วยกิตที่ลง</span>
+              <strong style="color:var(--gold-deep);">0 / 21</strong>
+            </div>
+            <div class="progress__bar"><div class="progress__fill" style="width:0%;"></div></div>
+          </div>
+        </aside>
+
+        <!-- Course catalog -->
+        <section aria-label="รายวิชาที่เปิดสอน">
+          <h2 class="section-title">พบ 8 รายวิชา</h2>
+          <div class="course-grid">
+            <article class="course-card">
+              <div class="course-card__head">
+                <div>
+                  <p class="course-card__code">CS-301</p>
+                  <p class="course-card__name">ปัญญาประดิษฐ์</p>
+                </div>
+                <span class="badge badge--open">เปิด</span>
+              </div>
+              <div class="course-card__meta">
+                <span>👨‍🏫 ดร. สมปอง</span>
+                <span>🕐 จ-พ 09:00-10:30</span>
+                <span>📦 3 หน่วยกิต · ที่นั่ง 25/40</span>
+              </div>
+              <button class="btn btn--gold course-card__btn" type="button">+ เพิ่มลงทะเบียน</button>
+            </article>
+
+            <article class="course-card">
+              <div class="course-card__head">
+                <div>
+                  <p class="course-card__code">CS-302</p>
+                  <p class="course-card__name">การเรียนรู้ของเครื่อง</p>
+                </div>
+                <span class="badge badge--open">เปิด</span>
+              </div>
+              <div class="course-card__meta">
+                <span>👨‍🏫 ดร. วิภา</span>
+                <span>🕐 อ-พฤ 13:00-14:30</span>
+                <span>📦 3 หน่วยกิต · ที่นั่ง 38/40</span>
+              </div>
+              <button class="btn btn--gold course-card__btn" type="button">+ เพิ่มลงทะเบียน</button>
+            </article>
+
+            <article class="course-card">
+              <div class="course-card__head">
+                <div>
+                  <p class="course-card__code">CS-303</p>
+                  <p class="course-card__name">ความปลอดภัยไซเบอร์</p>
+                </div>
+                <span class="badge badge--conflict">⚠ ชน</span>
+              </div>
+              <div class="course-card__meta">
+                <span>👨‍🏫 อ. ณัฐพล</span>
+                <span>🕐 พ 15:00-18:00</span>
+                <span>📦 3 หน่วยกิต · ที่นั่ง 40/40</span>
+              </div>
+              <button class="btn btn--primary course-card__btn" type="button" disabled style="opacity:0.5;cursor:not-allowed;">ชนกับตาราง</button>
+            </article>
+
+            <article class="course-card">
+              <div class="course-card__head">
+                <div>
+                  <p class="course-card__code">CS-304</p>
+                  <p class="course-card__name">การพัฒนาแอปพลิเคชัน</p>
+                </div>
+                <span class="badge badge--open">เปิด</span>
+              </div>
+              <div class="course-card__meta">
+                <span>👨‍🏫 ดร. กฤต</span>
+                <span>🕐 พฤ 10:00-12:00</span>
+                <span>📦 3 หน่วยกิต · ที่นั่ง 12/35</span>
+              </div>
+              <button class="btn btn--gold course-card__btn" type="button">+ เพิ่มลงทะเบียน</button>
+            </article>
+
+            <article class="course-card">
+              <div class="course-card__head">
+                <div>
+                  <p class="course-card__code">GE-201</p>
+                  <p class="course-card__name">ภาษาอังกฤษเพื่อการสื่อสาร</p>
+                </div>
+                <span class="badge badge--open">เปิด</span>
+              </div>
+              <div class="course-card__meta">
+                <span>👨‍🏫 อ. Sarah</span>
+                <span>🕐 จ 14:00-16:30</span>
+                <span>📦 3 หน่วยกิต · ที่นั่ง 28/45</span>
+              </div>
+              <button class="btn btn--gold course-card__btn" type="button">+ เพิ่มลงทะเบียน</button>
+            </article>
+
+            <article class="course-card">
+              <div class="course-card__head">
+                <div>
+                  <p class="course-card__code">GE-202</p>
+                  <p class="course-card__name">การคิดเชิงระบบ</p>
+                </div>
+                <span class="badge badge--open">เปิด</span>
+              </div>
+              <div class="course-card__meta">
+                <span>👨‍🏫 ดร. มนู</span>
+                <span>🕐 พ 09:00-11:00</span>
+                <span>📦 2 หน่วยกิต · ที่นั่ง 30/50</span>
+              </div>
+              <button class="btn btn--gold course-card__btn" type="button">+ เพิ่มลงทะเบียน</button>
+            </article>
+
+            <article class="course-card">
+              <div class="course-card__head">
+                <div>
+                  <p class="course-card__code">CS-305</p>
+                  <p class="course-card__name">คลาวด์คอมพิวติ้ง</p>
+                </div>
+                <span class="badge badge--open">เปิด</span>
+              </div>
+              <div class="course-card__meta">
+                <span>👨‍🏫 ดร. ปิยะ</span>
+                <span>🕐 ศ 08:30-11:00</span>
+                <span>📦 3 หน่วยกิต · ที่นั่ง 20/30</span>
+              </div>
+              <button class="btn btn--gold course-card__btn" type="button">+ เพิ่มลงทะเบียน</button>
+            </article>
+
+            <article class="course-card">
+              <div class="course-card__head">
+                <div>
+                  <p class="course-card__code">CS-306</p>
+                  <p class="course-card__name">บิ๊กดาต้า</p>
+                </div>
+                <span class="badge badge--conflict">⚠ ชน</span>
+              </div>
+              <div class="course-card__meta">
+                <span>👨‍🏫 ดร. อรุณ</span>
+                <span>🕐 อ 15:00-17:30</span>
+                <span>📦 3 หน่วยกิต · ที่นั่ง 35/40</span>
+              </div>
+              <button class="btn btn--primary course-card__btn" type="button" disabled style="opacity:0.5;cursor:not-allowed;">ชนกับตาราง</button>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <p>© 2569 มหาวิทยาลัยแม่โจ้ — ระบบบริการการศึกษา | ข้อมูลตัวอย่างเพื่อการศึกษาเท่านั้น</p>
+  </footer>
+</body>
+</html>

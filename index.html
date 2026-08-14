@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>แดชบอร์ดนักศึกษา — ระบบบริการการศึกษา มหาวิทยาลัยแม่โจ้</title>
+  <meta name="description" content="ระบบบริการการศึกษา มหาวิทยาลัยแม่โจ้ — แดชบอร์ดภาพรวมการศึกษานักศึกษา" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="site-header__top">
+      <div class="site-header__logo" aria-hidden="true">MJ</div>
+      <div class="site-header__titles">
+        <p class="site-header__uni">มหาวิทยาลัยแม่โจ้</p>
+        <p class="site-header__uni-en">Maejo University</p>
+      </div>
+      <div class="site-header__system">
+        <p class="site-header__system-th">ระบบบริการการศึกษา</p>
+        <p class="site-header__system-en">Student Service System</p>
+      </div>
+    </div>
+    <div class="site-header__sub">
+      <span class="site-header__welcome">ยินดีต้อนรับสู่ระบบบริการการศึกษา</span>
+      <span class="site-header__lang">
+        <span class="site-header__lang-flag">🇹🇭</span> ภาษาไทย ▾
+      </span>
+    </div>
+  </header>
+
+  <!-- ============ LAYOUT BODY ============ -->
+  <div class="layout-body">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="เมนูหลัก">
+      <p class="sidebar__title">เมนูหลัก</p>
+      <nav>
+        <ul>
+          <li><a class="sidebar__link is-active" href="index.html"><span class="sidebar__num">1</span> แดชบอร์ดนักศึกษา</a></li>
+          <li><a class="sidebar__link" href="registry.html"><span class="sidebar__num">2</span> ลงทะเบียนเรียน</a></li>
+          <li><a class="sidebar__link" href="ledger.html"><span class="sidebar__num">3</span> ผลการเรียน</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar__hint">ยินดีต้อนรับสู่ระบบบริการการศึกษา — มหาวิทยาลัยแม่โจ้</div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main" id="main">
+
+      <!-- HERO -->
+      <section class="hero" aria-label="ภาพรวมการศึกษา">
+        <div class="hero__inner">
+          <div class="hero__main">
+            <p class="hero__eyebrow">ยินดีต้อนรับ</p>
+            <h1 class="hero__title">สวัสดี นาย สมชาย ใจดี</h1>
+            <p class="hero__subtitle">วิทยาการคอมพิวเตอร์ · ชั้นปีที่ 3 · รหัสนักศึกษา 67XXXXXXX</p>
+            <div class="hero__stats">
+              <div class="stat">
+                <p class="stat__label">หน่วยกิตสะสม</p>
+                <p class="stat__value stat__value--gold">96 / 132</p>
+              </div>
+              <div class="stat">
+                <p class="stat__label">สถานะ</p>
+                <p class="stat__value">ปกติ</p>
+              </div>
+            </div>
+          </div>
+          <div class="gpa-arc">
+            <div class="gpa-arc__ring">
+              <svg width="140" height="140" viewBox="0 0 100 100" style="transform:rotate(-90deg)">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="8"/>
+                <circle cx="50" cy="50" r="42" fill="none" stroke="#EAB308" stroke-width="8" stroke-linecap="round"
+                  stroke-dasharray="240 264"/>
+              </svg>
+              <div class="gpa-arc__value">
+                <span class="gpa-arc__number">3.65</span>
+                <span class="gpa-arc__caption">GPA</span>
+              </div>
+            </div>
+            <p class="gpa-arc__label">เกรดเฉลี่ยสะสม</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEXT ACTION -->
+      <section class="card" aria-label="คาบเรียนถัดไป">
+        <div class="next-action">
+          <div class="next-action__body">
+            <div class="next-action__icon">⏰</div>
+            <div>
+              <p class="next-action__eyebrow">คาบเรียนถัดไป · อีก 15 นาที</p>
+              <p class="next-action__course">โครงสร้างข้อมูล (CS-204)</p>
+              <p class="next-action__meta">📍 ห้อง คอมฯ 205 · อาจารย์ ดร. สมศักดิ์</p>
+            </div>
+          </div>
+          <a class="btn btn--primary" href="#">เข้าเรียน →</a>
+        </div>
+      </section>
+
+      <!-- GRID: schedule + announcements -->
+      <div class="grid-main">
+        <!-- Schedule -->
+        <section aria-label="ตารางเรียนสัปดาห์">
+          <h2 class="section-title"><span class="section-title__icon">📅</span> ตารางเรียนสัปดาห์นี้</h2>
+          <ul class="schedule-list">
+            <li class="schedule-item">
+              <div class="schedule-item__day schedule-item__day--a">จ</div>
+              <div class="schedule-item__body">
+                <div>
+                  <p class="schedule-item__course">สถิติประยุกต์</p>
+                  <p class="schedule-item__room">📍 คอมฯ 301</p>
+                </div>
+                <p class="schedule-item__time">09:00-10:30</p>
+              </div>
+            </li>
+            <li class="schedule-item">
+              <div class="schedule-item__day schedule-item__day--b">อ</div>
+              <div class="schedule-item__body">
+                <div>
+                  <p class="schedule-item__course">โครงสร้างข้อมูล</p>
+                  <p class="schedule-item__room">📍 คอมฯ 205</p>
+                </div>
+                <p class="schedule-item__time">11:00-12:30</p>
+              </div>
+            </li>
+            <li class="schedule-item">
+              <div class="schedule-item__day schedule-item__day--c">พ</div>
+              <div class="schedule-item__body">
+                <div>
+                  <p class="schedule-item__course">ฐานข้อมูล</p>
+                  <p class="schedule-item__room">📍 คอมฯ 401</p>
+                </div>
+                <p class="schedule-item__time">13:00-14:30</p>
+              </div>
+            </li>
+            <li class="schedule-item">
+              <div class="schedule-item__day schedule-item__day--a">พฤ</div>
+              <div class="schedule-item__body">
+                <div>
+                  <p class="schedule-item__course">วิศวกรรมซอฟต์แวร์</p>
+                  <p class="schedule-item__room">📍 คอมฯ 302</p>
+                </div>
+                <p class="schedule-item__time">10:00-11:30</p>
+              </div>
+            </li>
+            <li class="schedule-item">
+              <div class="schedule-item__day schedule-item__day--b">ศ</div>
+              <div class="schedule-item__body">
+                <div>
+                  <p class="schedule-item__course">โครงงานคอมพิวเตอร์</p>
+                  <p class="schedule-item__room">📍 ห้องปฏิบัติการ 1</p>
+                </div>
+                <p class="schedule-item__time">08:30-10:00</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Announcements + Quick links -->
+        <aside aria-label="ประกาศและลิงก์ด่วน">
+          <h2 class="section-title"><span class="section-title__icon">📢</span> ประกาศเรื่อง</h2>
+          <div style="display:flex;flex-direction:column;gap:12px;">
+            <article class="announce">
+              <div class="announce__head">
+                <p class="announce__title">1. กำหนดการสอบกลางภาค ภาคเรียนที่ 1 ปีการศึกษา 2569 (ด่วนที่สุด)</p>
+                <span class="announce__badge">ด่วน</span>
+              </div>
+              <!-- Poster (วาดด้วย CSS ไม่ต้องใช้รูปภาพ) -->
+              <div class="poster">
+                <div class="poster__logo">MJ</div>
+                <p class="poster__title">กำหนดการสอบกลางภาค ภาคเรียนที่ 1 ปีการศึกษา 2569</p>
+                <p class="poster__highlight">24-30 สิงหาคม 2569</p>
+                <p class="poster__sub">นักศึกษาสามารถตรวจสอบตารางสอบได้ตั้งแต่วันที่ 27 กรกฎาคม 2569 เวลา 13.00 น. เป็นต้นไป</p>
+                <p class="poster__disclaimer">** โปรดตรวจสอบ วัน เวลา ห้องสอบ และเลขที่นั่งสอบก่อนวันสอบทุกครั้ง</p>
+                <div class="poster__qr">
+                  <div class="poster__qr-box" aria-hidden="true"></div>
+                  <span class="poster__qr-label">SCAN ME →</span>
+                </div>
+              </div>
+              <p class="announce__date">ประกาศโดย บุญกร ชัยวงศ์ · วันที่ประกาศ 24 กรกฎาคม 2569</p>
+              <p class="announce__share">↗ แชร์ไปยัง Facebook</p>
+            </article>
+
+            <article class="announce">
+              <div class="announce__head">
+                <p class="announce__title">2. การชำระเงินค่าเทอมภาคเรียนที่ 1 (ด่วนที่สุด)</p>
+                <span class="announce__badge">ด่วน</span>
+              </div>
+              <p class="announce__date">ประกาศเมื่อ 20 กรกฎาคม 2569</p>
+            </article>
+
+            <article class="announce">
+              <div class="announce__head">
+                <p class="announce__title">3. เปิดลงทะเบียนเรียนภาคเรียนที่ 2</p>
+              </div>
+              <p class="announce__date">ประกาศเมื่อ 15 กรกฎาคม 2569</p>
+            </article>
+          </div>
+
+          <!-- Quick links -->
+          <section class="card" style="margin-top:16px;background:var(--evergreen);border:none;color:#fff;">
+            <h3 class="card__title" style="color:var(--gold);">ลิงก์ด่วน</h3>
+            <div class="quicklinks">
+              <a class="quicklink" href="registry.html"><span class="quicklink__icon">📚</span> วิชาที่เปิดสอน</a>
+              <a class="quicklink" href="ledger.html"><span class="quicklink__icon">🏅</span> ผลการเรียน</a>
+              <a class="quicklink" href="#"><span class="quicklink__icon">📈</span> ประวัติการเรียน</a>
+              <a class="quicklink" href="#"><span class="quicklink__icon">🗓️</span> ปฏิทินการศึกษา</a>
+            </div>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <p>© 2569 มหาวิทยาลัยแม่โจ้ — ระบบบริการการศึกษา | ข้อมูลตัวอย่างเพื่อการศึกษาเท่านั้น</p>
+  </footer>
+</body>
+</html>

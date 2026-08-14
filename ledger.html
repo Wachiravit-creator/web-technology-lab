@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ผลการเรียน — ระบบบริการการศึกษา มหาวิทยาลัยแม่โจ้</title>
+  <meta name="description" content="ผลการเรียนและประวัติการศึกษา มหาวิทยาลัยแม่โจ้" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="site-header__top">
+      <div class="site-header__logo" aria-hidden="true">MJ</div>
+      <div class="site-header__titles">
+        <p class="site-header__uni">มหาวิทยาลัยแม่โจ้</p>
+        <p class="site-header__uni-en">Maejo University</p>
+      </div>
+      <div class="site-header__system">
+        <p class="site-header__system-th">ระบบบริการการศึกษา</p>
+        <p class="site-header__system-en">Student Service System</p>
+      </div>
+    </div>
+    <div class="site-header__sub">
+      <span class="site-header__welcome">ยินดีต้อนรับสู่ระบบบริการการศึกษา</span>
+      <span class="site-header__lang"><span class="site-header__lang-flag">🇹🇭</span> ภาษาไทย ▾</span>
+    </div>
+  </header>
+
+  <!-- ============ LAYOUT BODY ============ -->
+  <div class="layout-body">
+    <!-- SIDEBAR -->
+    <aside class="sidebar" aria-label="เมนูหลัก">
+      <p class="sidebar__title">เมนูหลัก</p>
+      <nav>
+        <ul>
+          <li><a class="sidebar__link" href="index.html"><span class="sidebar__num">1</span> แดชบอร์ดนักศึกษา</a></li>
+          <li><a class="sidebar__link" href="registry.html"><span class="sidebar__num">2</span> ลงทะเบียนเรียน</a></li>
+          <li><a class="sidebar__link is-active" href="ledger.html"><span class="sidebar__num">3</span> ผลการเรียน</a></li>
+          <li><a class="sidebar__link" href="#"><span class="sidebar__num">4</span> ตารางสอนอาจารย์</a></li>
+          <li><a class="sidebar__link" href="#"><span class="sidebar__num">5</span> ตารางการใช้ห้อง</a></li>
+          <li><a class="sidebar__link" href="#"><span class="sidebar__num">6</span> ปฏิทินการศึกษา</a></li>
+          <li><a class="sidebar__link" href="#"><span class="sidebar__num">7</span> หลักสูตรที่เปิดสอน</a></li>
+          <li><a class="sidebar__link" href="#"><span class="sidebar__num">8</span> ประวัติการเรียน</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar__hint">ดาวน์โหลดใบแสดงผลการเรียนได้ที่ปุ่มด้านบน</div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main" id="main">
+      <!-- HERO -->
+      <section class="hero" aria-label="ผลการเรียนและประวัติการศึกษา">
+        <div class="hero__inner">
+          <div class="hero__main">
+            <p class="hero__eyebrow">ประวัติการศึกษา</p>
+            <h1 class="hero__title">ผลการเรียนและประวัติการศึกษา</h1>
+            <p class="hero__subtitle">นาย สมชาย ใจดี · วิทยาการคอมพิวเตอร์ · รหัส 67XXXXXXX</p>
+            <div style="margin-top:18px;">
+              <a class="btn btn--gold" href="#">⬇ ดาวน์โหลดใบแสดงผลการเรียน</a>
+            </div>
+          </div>
+          <div class="hero__stats" style="flex-direction:column;">
+            <div class="stat">
+              <p class="stat__label">เกรดเฉลี่ยสะสม</p>
+              <p class="stat__value stat__value--gold">3.65</p>
+            </div>
+            <div class="stat">
+              <p class="stat__label">หน่วยกิตสะสม</p>
+              <p class="stat__value">96</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEMESTERS -->
+      <div style="display:flex;flex-direction:column;gap:16px;">
+
+        <!-- Semester 1 / 2568 -->
+        <section class="semester" aria-label="ภาคเรียนที่ 1 ปีการศึกษา 2568">
+          <header class="semester__head">
+            <div>
+              <h2 class="semester__title">ภาคเรียนที่ 1 ปีการศึกษา 2568</h2>
+              <p class="semester__status">สถานะ: ผ่าน</p>
+            </div>
+            <div class="semester__gpa">
+              <span class="semester__gpa-label">เกรดเฉลี่ย</span>
+              <span class="semester__gpa-value">3.75</span>
+            </div>
+          </header>
+          <div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--a">A</span>
+                <div>
+                  <p class="grade-row__name">โครงสร้างข้อมูล</p>
+                  <p class="grade-row__code">CS-201 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--a">A</span>
+                <div>
+                  <p class="grade-row__name">การวิเคราะห์และออกแบบระบบ</p>
+                  <p class="grade-row__code">CS-202 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--b">B+</span>
+                <div>
+                  <p class="grade-row__name">ภาษาอังกฤษพื้นฐาน</p>
+                  <p class="grade-row__code">GE-101 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--a">A</span>
+                <div>
+                  <p class="grade-row__name">ระบบปฏิบัติการ</p>
+                  <p class="grade-row__code">CS-203 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--b">B+</span>
+                <div>
+                  <p class="grade-row__name">คณิตศาสตร์เชิงการจัดการ</p>
+                  <p class="grade-row__code">MA-201 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Semester 2 / 2568 -->
+        <section class="semester" aria-label="ภาคเรียนที่ 2 ปีการศึกษา 2568">
+          <header class="semester__head">
+            <div>
+              <h2 class="semester__title">ภาคเรียนที่ 2 ปีการศึกษา 2568</h2>
+              <p class="semester__status">สถานะ: ผ่าน</p>
+            </div>
+            <div class="semester__gpa">
+              <span class="semester__gpa-label">เกรดเฉลี่ย</span>
+              <span class="semester__gpa-value">3.60</span>
+            </div>
+          </header>
+          <div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--a">A</span>
+                <div>
+                  <p class="grade-row__name">ฐานข้อมูล</p>
+                  <p class="grade-row__code">CS-204 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--b">B+</span>
+                <div>
+                  <p class="grade-row__name">เครือข่ายคอมพิวเตอร์</p>
+                  <p class="grade-row__code">CS-205 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--a">A</span>
+                <div>
+                  <p class="grade-row__name">วิศวกรรมซอฟต์แวร์</p>
+                  <p class="grade-row__code">CS-206 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--b">B</span>
+                <div>
+                  <p class="grade-row__name">สังคมศาสตร์เพื่อชีวิต</p>
+                  <p class="grade-row__code">GE-102 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--a">A</span>
+                <div>
+                  <p class="grade-row__name">หลักการคอมพิวเตอร์กราฟิก</p>
+                  <p class="grade-row__code">CS-207 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Semester 1 / 2567 -->
+        <section class="semester" aria-label="ภาคเรียนที่ 1 ปีการศึกษา 2567">
+          <header class="semester__head">
+            <div>
+              <h2 class="semester__title">ภาคเรียนที่ 1 ปีการศึกษา 2567</h2>
+              <p class="semester__status">สถานะ: ผ่าน</p>
+            </div>
+            <div class="semester__gpa">
+              <span class="semester__gpa-label">เกรดเฉลี่ย</span>
+              <span class="semester__gpa-value">3.50</span>
+            </div>
+          </header>
+          <div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--a">A</span>
+                <div>
+                  <p class="grade-row__name">การเขียนโปรแกรมคอมพิวเตอร์</p>
+                  <p class="grade-row__code">CS-101 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--b">B+</span>
+                <div>
+                  <p class="grade-row__name">คอมพิวเตอร์เบื้องต้น</p>
+                  <p class="grade-row__code">CS-102 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--b">B</span>
+                <div>
+                  <p class="grade-row__name">แคลคูลัส 1</p>
+                  <p class="grade-row__code">MA-101 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+            <div class="grade-row">
+              <div class="grade-row__info">
+                <span class="grade-pill grade-pill--a">A</span>
+                <div>
+                  <p class="grade-row__name">ภาษาไทยเพื่อการสื่อสาร</p>
+                  <p class="grade-row__code">GE-100 · 3 หน่วยกิต</p>
+                </div>
+              </div>
+              <span class="grade-row__credits">3 หน่วยกิต</span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <p>© 2569 มหาวิทยาลัยแม่โจ้ — ระบบบริการการศึกษา | ข้อมูลตัวอย่างเพื่อการศึกษาเท่านั้น</p>
+  </footer>
+</body>
+</html>
